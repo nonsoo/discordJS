@@ -1,12 +1,6 @@
-const { REST, Routes } = require("discord.js");
-import config from "./config/discord-config";
-
-const commands = [
-  {
-    name: "ping",
-    description: "Replies with Pong!",
-  },
-];
+import { REST, Routes } from "discord.js";
+import commands from "./command";
+import config from "../config/discord-config";
 
 const rest = new REST({ version: "10" }).setToken(config.DISCORD_TOKEN);
 
