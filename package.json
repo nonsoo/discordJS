@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "ts-node ./src/index.ts",
-    "build": "tsup ./src/index.ts --format cjs,esm --dts"
+    "build": "tsup ./src/index.ts --format cjs,esm --dts",
+    "deploy:commands": "ts-node ./src/deploy-commands.ts"
   },
   "keywords": [],
   "author": "",
